@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT:-3000}:3000"
+    volumes:
+      - ./uploads:/test-app/uploads
+    env_file:
+      - .env
