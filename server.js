@@ -38,8 +38,6 @@ app.get('/', (req, res) => {
         message: 'Server is running',
         port: PORT,
         nodeVersion: process.version,
-        req: req,
-        res: res
     });
 });
 
